@@ -48,8 +48,8 @@ document.getElementById("year").textContent = new Date().getFullYear();
   tarawork: "https://your-tarawork-site.pages.dev"
 */
 const projectLinks = {
-  tintalab: "#",
-  tarawork: "#"
+  tintalab: "https://tintalab.pages.dev",
+  tarawork: "https://tarawork.pages.dev"
 };
 
 document.querySelectorAll("[data-project]").forEach((link) => {

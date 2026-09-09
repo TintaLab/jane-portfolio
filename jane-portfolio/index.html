@@ -11,7 +11,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -360,6 +360,15 @@
       <a href="#home">Back to top ↑</a>
     </div>
   </footer>
+
+
+  <script>
+    document.querySelectorAll(".project-image img").forEach((img) => {
+      img.addEventListener("error", () => {
+        img.closest(".project-image")?.classList.add("is-missing");
+      });
+    });
+  </script>
 
   <script src="script.js"></script>
 </body>
